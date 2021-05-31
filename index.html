@@ -121,6 +121,7 @@ Author URL: http://w3layouts.com
                         영양소 검출 실험 결과가 잘 안나오나요?</h3>
                     <p>NutriCheck AI를 시작하세요!</p><br><button type="button" class="button" onclick="init()">시작하기(영양소별 수치로 표현)</button>     <a href="p5.html"><button type="button" class="button">시작하기2(검출 결과 레이블로 확인)</button></a> <!--버튼--><br><br>
                     웹캠(또는 카메라)을 완료된 영양소 검출 샘플에 비춰주세요!<br>
+                    <!-- <button type="button" id="#flip-button" class="button">카메라 전환</button> -->
 <div id="webcam-container"></div>
 <div id="label-container"></div>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
@@ -148,7 +149,7 @@ Author URL: http://w3layouts.com
 
         // Convenience function to setup a webcam
         const flip = true; // whether to flip the webcam
-        webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+        webcam = new constraints(); // width, height, flip
         await webcam.setup(); // request access to the webcam
         await webcam.play();
         window.requestAnimationFrame(loop);
@@ -173,10 +174,13 @@ Author URL: http://w3layouts.com
         const prediction = await model.predict(webcam.canvas);
         for (let i = 0; i < maxPredictions; i++) {
             const classPrediction =
-                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+                prediction[i].className + ": " + prediction[i].probability.toFixed(2) + "%";
             labelContainer.childNodes[i].innerHTML = classPrediction;
         }
     }
+// var front = false;
+// document.getElementById('flip-button').onclick = function() { front = !front; };
+// var constraints = { video: { facingMode: (front? "user" : "environment") } };
 </script>
 
                     </div>
