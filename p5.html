@@ -4,13 +4,60 @@
   <script src="p5.min.js"></script>
   <script src="p5.dom.min.js"></script>
   <script src="ml5.min.js" type="text/javascript"></script>
+<style>
+  p{
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&display=swap');
+    font-family: 'Baloo Tammudu 2', cursive;
+    color:coral
+  }
+  body{
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  /* unvisited link */
+a:link {
+  color: coral;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #E77114;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #B568F9;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+</style>
 </head>
 
 <body>
-  <h1>NutriCheck AI</h1>
-  <p>p5.js를 활용한 인공지능 영양소 검출입니다. javascript를 이용한 AI 검출을 하려면 <a href="index.html">이 링크</a>를 클릭해주세요.</p>
   
+  <p><h1><a href="index.html">NutriCheck AI</a></h1></p>
+  AI로 인식한 영양소 검출 실험 결과를 간단하게 확인할 수 있습니다. 각 영양소별 검출 확률을 확인하시려면 <a href="index.html">이 페이지</a>를 방문해주세요.</br>
+  원활한 검출 결과 확인을 위해 카메라 권한을 승인해주세요.</br>
+  영양소 검출 실험 결과가 없으신가요? <a href="https://imgur.com/gallery/UKmEUj1">샘플 데이터</a>를 확인해보세요!<br>
+</br>
+<div style="position:fixed;top:calc(50% - 250px);right:0;transition:width 300ms ease-out;width:0;" data-qa="side_panel"> <a class="typeform-share button" href="https://form.typeform.com/to/QBmxPfAr?typeform-medium=embed-snippet" data-mode="side_panel" style="box-sizing:border-box;position:absolute;top:300px;width:200px;height:48px;padding:0 20px;margin:0;cursor:pointer;background:#0445AF;border-radius:4px 4px 0px 0px;box-shadow:0px 2px 12px rgba(0, 0, 0, 0.06), 0px 2px 4px rgba(0, 0, 0, 0.08);display:flex;align-items:center;justify-content:flex-start;transform:rotate(-90deg);transform-origin:bottom left;color:white;text-decoration:none;z-index:9999;" data-width="320" data-height="500" target="_blank"> <span class="icon" style="width:32px;position:relative;text-align:center;transform:rotate(90deg) scale(0.85);left:-8px;"> <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' style="margin-top:10px;"> <path d='M21 0H0V9L10.5743 24V16.5H21C22.6567 16.5 24 15.1567 24 13.5V3C24 1.34325 22.6567 0 21 0ZM7.5 9.75C6.672 9.75 6 9.07875 6 8.25C6 7.42125 6.672 6.75 7.5 6.75C8.328 6.75 9 7.42125 9 8.25C9 9.07875 8.328 9.75 7.5 9.75ZM12.75 9.75C11.922 9.75 11.25 9.07875 11.25 8.25C11.25 7.42125 11.922 6.75 12.75 6.75C13.578 6.75 14.25 7.42125 14.25 8.25C14.25 9.07875 13.578 9.75 12.75 9.75ZM18 9.75C17.172 9.75 16.5 9.07875 16.5 8.25C16.5 7.42125 17.172 6.75 18 6.75C18.828 6.75 19.5 7.42125 19.5 8.25C19.5 9.07875 18.828 9.75 18 9.75Z' fill='white' /> </svg> </span> <span style="text-decoration:none;font-size:18px;font-family:Helvetica,Arial,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%;text-align:center;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"> Launch me </span> </a> </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+      <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/608d6ea662662a09efc3f280/1f4k7gfh0';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
   <script src="sketch.js"></script>
-
-
 </body></html>
