@@ -42,7 +42,6 @@ Author URL: http://w3layouts.com
 </head>
 
 <body>
-    <a class="typeform-share button" href="https://form.typeform.com/to/QBmxPfAr?typeform-medium=embed-snippet" data-mode="popover" style="width:54px;height:54px;position:fixed;box-shadow:0px 2px 12px rgba(0, 0, 0, 0.06), 0px 2px 4px rgba(0, 0, 0, 0.08);right:26px;bottom:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;background:#0445AF;overflow:hidden;line-height:0;" target="_blank"> <span class="icon"> <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' style="margin-top:6px;"> <path d='M21 0H0V9L10.5743 24V16.5H21C22.6567 16.5 24 15.1567 24 13.5V3C24 1.34325 22.6567 0 21 0ZM7.5 9.75C6.672 9.75 6 9.07875 6 8.25C6 7.42125 6.672 6.75 7.5 6.75C8.328 6.75 9 7.42125 9 8.25C9 9.07875 8.328 9.75 7.5 9.75ZM12.75 9.75C11.922 9.75 11.25 9.07875 11.25 8.25C11.25 7.42125 11.922 6.75 12.75 6.75C13.578 6.75 14.25 7.42125 14.25 8.25C14.25 9.07875 13.578 9.75 12.75 9.75ZM18 9.75C17.172 9.75 16.5 9.07875 16.5 8.25C16.5 7.42125 17.172 6.75 18 6.75C18.828 6.75 19.5 7.42125 19.5 8.25C19.5 9.07875 18.828 9.75 18 9.75Z' fill='white' /> </svg> </span> </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
     <!-- top header -->
     <section class="w3l-top-header">
         <div class="container-fluid">
@@ -124,8 +123,6 @@ Author URL: http://w3layouts.com
                     웹캠(또는 카메라)을 완료된 영양소 검출 샘플에 비춰주세요!<br>
                     검출 결과는 0.5초마다 업데이트됩니다!
                     <br>
-                    * 면책 조항: AI 검출 결과는 참고용이며, 100% 또는 이와 근접한 확률의 결과가 나왔더라도 검출을 보장하지는 않습니다.<br>
-                    만약 검출 결과가 다르게 나왔다면, 이 링크를 통해 신고해주세요!<br>
                     <!-- <button type="button" id="#flip-button" class="button">카메라 전환</button> -->
                     <div id="webcam-container"></div>
                     <div id="label-container"></div>
@@ -193,8 +190,9 @@ cur = new Date().getTime();
                                 labelContainer.childNodes[i].innerHTML = classPrediction;
                             }
                         }
-                    </script>
-
+                    </script><br>
+* 면책 조항: AI 검출 결과는 참고용이며, 100% 또는 이와 근접한 확률의 결과가 나왔더라도 검출을 보장하지는 않습니다.<br>
+만약 검출 결과가 다르게 나왔다면, <a href="mailto:admin@scian.cf?subject=NutriCheck AI 모델 데이터 오류&body=오류 종류: 실제 실험 결과와 다르게 AI가 인식합니다.%0a%0d파일: %0a%0d사진이 인공지능 모델 학습에 사용될 수 있음을 동의합니다. (이외 용도로는 사용되지 않습니다.)"%>이 링크</a>를 통해 신고해주세요!<br>
                     </div>
                 </div>
             </div>
