@@ -42,6 +42,21 @@ Author URL: http://w3layouts.com
 </head>
 
 <body>
+    <!-- <script type="text/javascript">
+
+        var filter = "win16|win32|win64|mac";
+        
+         
+        
+        if(navigator.platform){
+        
+        if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+            if(confirm("Android를 사용하신다면 모바일 앱을 사용하시는 방법을 알려드릴까요?"))
+                window.location.href = "https://www.notion.so/NutriCheck-AI-98982fc06f364828b38a8e24b844e054"
+        
+        }
+        
+        </script> -->
     <!-- top header -->
     <section class="w3l-top-header">
         <div class="container-fluid">
@@ -120,6 +135,7 @@ Author URL: http://w3layouts.com
                     <h3 class="title-style mb-sm-3 mb-2">
                         영양소 검출 실험 결과가 잘 안나오나요?</h3>
                     <p>NutriCheck AI를 시작하세요!</p><br><button type="button" class="button" onclick="init()">시작하기(영양소별 수치로 표현)</button>     <a href="p5.html"><button type="button" class="button">시작하기2(검출 결과 레이블로 확인)</button></a> <!--버튼--><br><br>
+                    <a href="https://www.notion.so/NutriCheck-AI-98982fc06f364828b38a8e24b844e054"><button type="button" class="button">모바일 앱 사용방법</button></a><br><br>
                     웹캠(또는 카메라)을 완료된 영양소 검출 샘플에 비춰주세요!<br>
                     검출 결과는 0.5초마다 업데이트됩니다!
                     <br>
@@ -191,7 +207,7 @@ cur = new Date().getTime();
                             }
                         }
                     </script><br>
-* 면책 조항: AI 검출 결과는 참고용이며, 100% 또는 이와 근접한 확률의 결과가 나왔더라도 검출을 보장하지는 않습니다.<br>
+<strong>* 면책 조항:</strong> AI 검출 결과는 참고용이며, 100% 또는 이와 근접한 확률의 결과가 나왔더라도 검출을 보장하지는 않습니다.<br>
 만약 검출 결과가 다르게 나왔다면, <a href="mailto:admin@scian.cf?subject=NutriCheck AI 모델 데이터 오류&body=오류 종류: 실제 실험 결과와 다르게 AI가 인식합니다.%0a%0d파일: %0a%0d사진이 인공지능 모델 학습에 사용될 수 있음을 동의합니다. (이외 용도로는 사용되지 않습니다.)"%>이 링크</a>를 통해 신고해주세요!<br>
                     </div>
                 </div>
