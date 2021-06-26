@@ -142,6 +142,7 @@ Author URL: http://w3layouts.com
                     <br>
                     <!-- <button type="button" id="#flip-button" class="button">카메라 전환</button> -->
                     <div id="webcam-container"></div>
+                    <font size="25">
                     <div id="label-container"></div>
                     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
                     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
@@ -207,7 +208,7 @@ cur = new Date().getTime();
                                 labelContainer.childNodes[i].innerHTML = classPrediction;
                             }
                         }
-                    </script><br>
+                    </script></font><br>
 <strong>* 면책 조항:</strong> AI 검출 결과는 참고용이며, 100% 또는 이와 근접한 확률의 결과가 나왔더라도 검출을 보장하지는 않습니다.<br>
 만약 검출 결과가 다르게 나왔다면, <a href="mailto:admin@scian.cf?subject=NutriCheck AI 모델 데이터 오류&body=오류 종류: 실제 실험 결과와 다르게 AI가 인식합니다.%0a%0d파일: %0a%0d사진이 인공지능 모델 학습에 사용될 수 있음을 동의합니다. (이외 용도로는 사용되지 않습니다.)"%>이 링크</a>를 통해 신고해주세요!<br>
                     </div>
